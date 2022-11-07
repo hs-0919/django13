@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>list</title>
+</head>
+<body>
+<h2> 커피 전문점에 대한 소비자 인식조사 결과 </h2>
+<a href="http://127.0.0.1">홈페이지</a>
+<br />
+{% if ctab %}
+{{ctab | safe}}
+{% endif %}
+<br />
+{% if result %}
+{{result | safe}}
+{% endif %}
+<br />
+분석에 사용된 관찰값 수 : {{count}}
+<br />
+<img src="/static/images/coffee.png" width="700" alt="맛있는 커피" />
+<br /><br />
+<a href="/coffee/survey">설문조사 화면</a>으로 이동
+
+</body>
+</html>
